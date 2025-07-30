@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --gold: #d6c88a;
+    --gold-strong: #b59f50;
+    --text-dark: #1a1a1a;
+    --text-mid: #555;
+    --panel-max: 320px;
+}
+
 body,
 html {
     margin: 0;
@@ -22,7 +30,7 @@ html {
 }
 
 #logoescritorio {
-    width: 600px;
+    width: 400px;
 }
 
 .hero-header video {
@@ -79,13 +87,108 @@ html {
     color: #000;
 }
 
-:root {
-    --gold: #d6c88a;
-    --gold-strong: #b59f50;
-    --text-dark: #1a1a1a;
-    --text-mid: #555;
-    --panel-max: 320px;
+/* Estilo geral */
+.areas-container {
+    background-color: #111;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
 }
+
+.areas-container h2 {
+    color: var(--gold);
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+/* Wrapper com as setas */
+.carousel-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex: 0 0 20%;
+  max-width: 20%;
+  box-sizing: border-box;
+  margin: 10px;
+  background: #1c1c1c;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: var(--gold);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+
+
+.card i {
+    font-size: 2.8rem;
+    color: var(--gold);
+    margin-bottom: 15px;
+    transition: color 0.2s;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gold);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background-color: #222;
+}
+
+.card:hover i {
+    color: #ffd700;
+}
+
+
+
 
 .meio {
     margin: 0;
@@ -143,22 +246,24 @@ html {
 }
 
 .info-panel h1 {
-    font-weight: 400;
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 1.4rem;
     color: var(--text-dark);
 }
 
 #estado-nome {
     margin: 0 0 .25rem 0;
-    font-weight: 700;
+    font-weight: bold;
+    font-family: serif;
     color: var(--gold-strong);
     text-transform: uppercase;
 }
 
 #proc-qtd {
     margin-top: 5px;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: bold;
     color: var(--gold-strong);
 }
 
@@ -171,23 +276,27 @@ html {
 
 #cidades-list li {
     margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 
 .cidade {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1;
 }
 
 .quantidade {
-  display: block;
-  margin-top: 4px;
-  margin-left: 1.3rem; /* Alinha com o texto da cidade */
-  color: #000;
-  font-size: 0.95rem;
-  text-align: left;
+    display: block;
+    margin-top: 4px;
+    margin-left: 1.3rem;
+    /* Alinha com o texto da cidade */
+    color: #000;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 400;
 }
 
 
@@ -216,8 +325,8 @@ html {
 
 .marker {
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: var(--gold);
     border: 2px solid var(--gold-strong);
@@ -270,7 +379,7 @@ html {
 }
 
 #logoti {
-    max-width: 100%;
+    max-width: 40%;
     height: auto;
 }
 
@@ -286,6 +395,7 @@ html {
 }
 
 @media (max-width: 768px) {
+
     .footer-left,
     .footer-right {
         max-width: 100%;
