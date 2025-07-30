@@ -62,31 +62,37 @@ const ESTADOS = {
 
   CE: { nome: "Ceará", processos: 5, cidades: [{ nome: "Fortaleza", qtd: 5 }] },
 
-  ES: { nome: "Espírito Santo", processos: 1, cidades: [{ nome: "Nova Venécia", qtd: 1 },] },
+  DF: { nome: "Distrito Federal", processos: 2, cidades: [{ nome: "Brasilia", qtd: 2 }] },
+
+  ES: { nome: "Espírito Santo", processos: 6, cidades: [{ nome: "Nova Venécia", qtd: 6 },] },
+
+  GO: { nome: "Goiás", processos: 3, cidades: [{ nome: "MINEIROS", qtd: 3 },] },
 
   MA: { nome: "Maranhão", processos: 10, cidades: [{ nome: "Ouro Preto", qtd: 1 }, { nome: "São luís", qtd: 4 }, { nome: "Imperatriz", qtd: 2 }, { nome: "Porto Franco", qtd: 3 },] },
 
-  MT: { nome: "Mato Grosso", processos: 3, cidades: [{ nome: "Cuiabá", qtd: 3 }] },
+  MT: { nome: "Mato Grosso", processos: 3, cidades: [{ nome: "Cuiabá", qtd: 3 },{ nome: "MIRASSOL D OESTE", qtd: 1 },{ nome: "PRIMAVERA DO LESTE", qtd: 1 },] },
 
-  MG: { nome: "Minas Gerais", processos: 17, cidades: [{ nome: "Guanhães", qtd: 10 }, { nome: "Patrocínio", qtd: 2 }, { nome: "Belo horizonte", qtd: 5 },] },
+  MS: { nome: "Mato Grosso do Sul", processos: 1, cidades: [{ nome: "Trabalho de Chapadão do Sul", qtd: 1 }, { nome: "CAMPO GRANDE", qtd: 17 }] },
+
+  MG: { nome: "Minas Gerais", processos: 17, cidades: [{ nome: "Guanhães", qtd: 10 }, { nome: "Patrocínio", qtd: 2 }, { nome: "Belo horizonte", qtd: 1 },{ nome: "Coronel Fabriciano", qtd: 1 },{ nome: "Iturama", qtd: 1 },] },
 
   PA: { nome: "Pará", processos: 1, cidades: [{ nome: "Belém", qtd: 1 }] },
 
   PB: { nome: "Paraíba", processos: 1, cidades: [{ nome: "João Pessoa", qtd: 1 }] },
 
-  PR: { nome: "Paraná", processos: 1, cidades: [{ nome: "Curitiba", qtd: 1 }, { nome: "Colombo", qtd: 1 }] },
+  PR: { nome: "Paraná", processos: 2, cidades: [{ nome: "Curitiba", qtd: 1 }, { nome: "Colombo", qtd: 1 }] },
 
   PI: { nome: "Piauí", processos: 1, cidades: [{ nome: "Teresina", qtd: 1 }] },
 
-  RJ: { nome: "Rio de Janeiro", processos: 5, cidades: [{ nome: "Rio de Janeiro", qtd: 5 }] },
-
   RN: { nome: "Rio Grande do Norte", processos: 2, cidades: [{ nome: "Natal", qtd: 2 }] },
+
+  RS: { nome: "Rio Grande do Sul", processos: 1, cidades: [{ nome: "CARAZINHO", qtd: 1 }] },
 
   RO: { nome: "Rondonia", processos: 1, cidades: [{ nome: "Porto Velho", qtd: 1 },] },
   
   SC: { nome: "Santa Catarina", processos: 1, cidades: [{ nome: "Rio do Sul", qtd: 1 },] },
 
-  SP: { nome: "São Paulo", processos: 578, cidades: [{ nome: "Santos", qtd: 191 }, { nome: "São Vicente", qtd: 32 }, { nome: "Praia Grande", qtd: 8 }, { nome: "Guarujá", qtd: 3 }, { nome: "Cubatão", qtd: 14 }, { nome: "Bertioga", qtd: 1 }, { nome: "Osasco", qtd: 1 }, { nome: "Santana de parnaíba", qtd: 1 }, { nome: "São José do Rio Preto", qtd: 3 }, { nome: "Paulínea", qtd: 1 }, { nome: "Pindamonhangaba", qtd: 1 }] }
+  SP: { nome: "São Paulo", processos: 578, cidades: [{ nome: "Santos", qtd: 87 }, { nome: "São Vicente", qtd: 10 }, { nome: "Praia Grande", qtd: 10 }, { nome: "Guarujá", qtd: 2 }, { nome: "Cubatão", qtd: 13 }, { nome: "Bertioga", qtd: 1 }, { nome: "São paulo", qtd: 11 }, { nome: "Osasco", qtd: 1 }, { nome: "Santana de parnaíba", qtd: 1 }, { nome: "São José do Rio Preto", qtd: 3 }, { nome: "Paulínea", qtd: 1 }, { nome: "Pindamonhangaba", qtd: 1 }, { nome: "Taboão da Serra", qtd: 1 }] }
 };
 
 const markers = document.querySelectorAll('.marker');

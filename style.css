@@ -442,3 +442,20 @@ html {
 .social-icons a:hover {
     color: #fff;
 }
+
+.footer-column ul li a {
+  color: inherit; /* usa a cor padrão do texto (ex: branco ou dourado) */
+  text-decoration: none; /* remove o sublinhado */
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline; /* opcional: sublinhado ao passar o mouse */
+  color: #d4af37; /* opcional: tom dourado no hover */
+}
+
+.footer-column ul li a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+
