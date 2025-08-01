@@ -378,6 +378,15 @@ html {
     font-family: Arial, sans-serif;
 }
 
+/* footer {
+  background-image: url('img/dourado.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+} */
+
+
 #logoti {
     max-width: 40%;
     height: auto;
