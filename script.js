@@ -151,7 +151,9 @@ const traducoes = {
       taxLaw: "Direito Tributário",
       criminalLaw: "Direito Criminal",
       businessLaw: "Direito Empresarial",
-      environmentalLaw: "Direito Ambiental"
+      environmentalLaw: "Direito Ambiental",
+      bankingLaw: "Direito Bancário",
+      internationalLaw: "Direito Internacional"
     }
   },
   en: {
@@ -173,7 +175,9 @@ const traducoes = {
       taxLaw: "Tax Law",
       criminalLaw: "Criminal Law",
       businessLaw: "Business Law",
-      environmentalLaw: "Environmental Law"
+      environmentalLaw: "Environmental Law",
+      bankingLaw: "Banking Law",
+      internationalLaw: "International Law"
     }
   },
   es: {
@@ -195,10 +199,13 @@ const traducoes = {
       taxLaw: "Derecho Tributario",
       criminalLaw: "Derecho Penal",
       businessLaw: "Derecho Empresarial",
-      environmentalLaw: "Derecho Ambiental"
+      environmentalLaw: "Derecho Ambiental",
+      bankingLaw: "Derecho Bancario",
+      internationalLaw: "Derecho Internacional"
     }
   }
 };
+
 
 
 function trocarIdioma(idioma) {
